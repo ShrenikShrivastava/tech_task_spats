@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">BWB</div>
+        <ul class="nav-links">
+            <li><a href = "index1.html">Home</a></li>
+            <li><a href = "events.html">Events</a></li>
+            <li><a href = "https://www.instagram.com/shrenik_7_/">Contacts</a></li>
+            <li><a href = "##">Refreshments</a></li>
+            <li><a href = "about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="section-heading">Login / Sign Up</h2>
+
+    <div class="form-container">
+        <form class="login-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" min="1" max="120" required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
