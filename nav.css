@@ -373,9 +373,31 @@ nav{
 
 .main-header {
     text-align: center;
-    font-family: 'Montserrat'; /* or try 'Roboto', 'Montserrat', etc. */
-    font-size: 3rem;   /* adjust size as needed */
-    font-weight: 800;  /* makes it bold */
-    color: rgb(116, 141, 186); /* matches your theme */
-    margin: 2rem 0;    /* spacing above and below */
+    font-family: 'Montserrat';
+    font-size: 3rem;  
+    font-weight: 800;  
+    color: rgb(116, 141, 186); 
+    margin: 2rem 0;   
+}
+/*this part below is the one i have added with help of AI in order to remove error in navigation bar in mobile*/
+
+@media (max-width: 900px) {
+    nav {
+        justify-content: center; 
+        flex-direction: column;  
+        padding-bottom: 1.5rem;  
+    }
+
+    .logo {
+        margin-right: 0;     
+        margin-bottom: 1rem;  
+    }
+
+    .nav-links {
+        margin-right: 0;
+        margin-bottom: 1.5rem; 
+        flex-wrap: wrap;   
+        justify-content: center;
+        gap: 1.5rem;           
+    }
 }
