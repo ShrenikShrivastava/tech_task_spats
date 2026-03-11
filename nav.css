@@ -49,9 +49,9 @@ nav{
     transition: 0.5s;
 }
 .nav-links li a:hover{
-    color: rgb(28, 70, 255);
+    color: rgb(197, 205, 239);
     transition: 0.4s;
-    text-shadow: 0 0 12px #595cb3;
+    text-shadow: 0 0 12px #78dfff;
 }
 .btns{
     display:flex;
