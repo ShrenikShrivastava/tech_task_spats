@@ -4,7 +4,7 @@
     <meta name ="viewport"
     content = "width =device-width, initial-scale= 1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="copied.css">
     <title>Bookers Webpage</title>
 
 </head>
@@ -12,7 +12,14 @@
     <h1 class="main-header">Bookers WebBook</h1>
     <nav>
         <div class= "logo">BWB</div>
+        <div class="hamburgerLogo">
+            <img src="home.svg" alt="Open Menu" class="icon-menu">
+            
+        </div>
         <ul class = "nav-links">
+            <li class="cross">
+                <img src="cross.svg" alt="Close" class="icon-close">
+            </li>
             <li><a href = "index.html">Home</a></li>
             <li><a href = "events.html">Events</a></li>
             <li><a href = "https://www.instagram.com/shrenik_7_/">Contacts Us</a></li>
@@ -84,4 +91,16 @@
         <p>these links to various social media sites are mine only and have only been placed for the task requirements. </p>
     </div>
 </footer>
+<script>
+    const hamburgerLogo = document.querySelector('.hamburgerLogo');
+    const nav = document.querySelector('nav');
+    const cross = document.querySelector('.cross');
+
+    hamburgerLogo.addEventListener('click', ()=>{
+        nav.classList.toggle('active');
+    })
+    cross.addEventListener('click', () =>{
+        nav.classList.remove('active');
+    })
+</script>
 </body>
